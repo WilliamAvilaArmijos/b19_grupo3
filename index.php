@@ -14,7 +14,7 @@
 <body class="easyui-layout">
 <div class="titulo"> 
 	   FIRMA LEGAL
-       LEGA & CO 
+       LEGIS & CO 
  </div>
  <p> </p>
 <p></p>
