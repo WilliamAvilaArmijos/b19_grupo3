@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>UTI</title>
+	<title>LEGIS & CO</title>
  
     <link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.8.8/themes/bootstrap/easyui.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.8.8/themes/icon.css">
@@ -14,16 +14,16 @@
 <?php
  session_start();
  if( isset(  $_SESSION['usuario']) ==false)
- header("location: index.php") ;
+ header("location: index2.php") ;
 ?>
 <body class="easyui-layout">
           
  
         <div data-options="region:'north'" style="height:60px"> 
-        <img src="imagenes/uti-logo.jpg"   height="50px"  > </img>
+        <img src="imagenes/firma.png"   height="100px"  > </img>
          <div class="titulousuario">
           Usuario: <?php echo $_SESSION['usuario']; ?> 
-          <a href="index.php"> Salir </a>
+          <a href="index2.php"> Salir </a>
          </div> 
 
         </div>
