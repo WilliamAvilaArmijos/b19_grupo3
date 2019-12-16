@@ -51,18 +51,20 @@
 						</ul>
 					</li>
 					<li>
-						<span>Program Files</span>
+						<span>Gestion Documental</span>
 						<ul>
-							<li>Intel</li>
-							<li>Java</li>
-							<li>Microsoft Office</li>
-							<li>Games</li>
-							<li><a href="main.php?pagina=evento"> Eventos</a></li>
+							<li>Externo</li>
+							<li>Coordinacion</li>
+							<li>Archivo</li>
+							<li>Citaciones</li>
+							<li><a href="main.php?pagina=evento"> Escritos</a></li>
+							<li>Gestiones</li>
+							<li>Contestaciones</li>
+							<li>Personal Externo</li>
+							<li>Citas</li>
+							<li>Archivados</li>
 						</ul>
 					</li>
-					<li>index.html</li>
-					<li>about.html</li>
-					<li>welcome.html</li>
 				</ul>
 			</li>
 		</ul>

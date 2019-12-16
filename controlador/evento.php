@@ -4,8 +4,14 @@
             rownumbers="true" fitColumns="true" singleSelect="true">
         <thead>
             <tr>               
-                <th field="login" width="100">LOGIN</th>
-                <th field="nombre" width="100">NOMBRE</th>
+                <th field="login" width="100"># Proceso Interno</th>
+                <th field="nombre" width="100"># Expediente</th>
+                <th field="nombre" width="100">Juez/Fiscal/Autoridad a Cargo</th>
+                <th field="nombre" width="100">Cliente</th>
+                <th field="nombre" width="100">Contraparte/Accion</th>
+                <th field="nombre" width="100">Ingresos/Despachos</th>
+                <th field="nombre" width="100">Actividad</th>
+                <th field="nombre" width="100">Fecha</th>
             </tr>
         </thead>
     </table>
@@ -20,17 +26,34 @@
         <form id="fm" method="post" novalidate style="margin:0;padding:20px 50px">
             <h3>User Information</h3>
             <div style="margin-bottom:10px">
-                <input name="login" class="easyui-textbox" required="true" label="First Name:" style="width:100%">
+                <input name="login" class="easyui-textbox" required="true" label="# Proceso:" style="width:100%">
             </div>
             <div style="margin-bottom:10px">
-                <input name="nombre" class="easyui-textbox" required="true" label="Last Name:" style="width:100%">
+                <input name="nombre" class="easyui-textbox" required="true" label="# Expediente:" style="width:100%">
             </div> 
-             
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Autoridad:" style="width:100%">
+            </div> 
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Cliente:" style="width:100%">
+            </div> 
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Contra/Acc:" style="width:100%">
+            </div> 
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Ingr/Desp:" style="width:100%">
+            </div> 
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Actividad:" style="width:100%">
+            </div> 
+            <div style="margin-bottom:10px">
+                <input name="nombre" class="easyui-textbox" required="true" label="Fecha:" style="width:100%">
+            </div> 
         </form>
     </div>
     <div id="dlg-buttons">
-        <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveUser()" style="width:90px">Save</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')" style="width:90px">Cancel</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton c6" iconCls="icon-ok" onclick="saveUser()" style="width:90px">Guardar</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')" style="width:90px">Cancelar</a>
     </div>
     <script type="text/javascript">
         var url;
