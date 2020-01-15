@@ -65,7 +65,7 @@ switch ($op) {
              
             echo json_encode($response); 
              break; 
-      case 'update':
+            case 'update':
               $response = array( 
                       'status' => 0, 
                       'msg' =>  '  Se produjeron algunos problemas. Inténtalo de nuevo.' 
@@ -86,8 +86,31 @@ switch ($op) {
                    
                   echo json_encode($response); 
               break; 
+
+              case 'delete':
+                $response = array( 
+                        'status' => 0, 
+                        'msg' =>  '  Se produjeron algunos problemas. Inténtalo de nuevo.' 
+                    );          
+                    if(!empty($_POST['login'])   ){ 
+                        $login = $_POST['login']; 
+                      
+                        $sql = " delete from usuario where login ='$login' "; 
+                        $insert = pg_query($sql); 
+                         
+                        if($insert){ 
+                            $response['status'] = 1; 
+                            $response['msg'] = '¡Los datos del usuario se han eliminado con éxito!'; 
+                        } 
+                    }else{ 
+                        $response['msg'] = 'Por favor complete todos los campos obligatorios.'; 
+                    } 
+                     
+                    echo json_encode($response); 
+         break; 
     default:
-            echo json_encode( "Error no existe la opcion ".$op);
+            echo json_encode( "Error no existe la opcion:  " .$op);
 
             }
+  
 ?>
